@@ -7,8 +7,16 @@ const BooksListItem = () => {
             <input type="text" className="list-group-item-input" defaultValue="1000$"/>
             <div className='d-flex justify-content-center align-items-center'>
                 <button type="button"
-                    className="btn-cookie btn-sm ">
-                    <i className="fas fa-cookie"></i>
+                    className="btn-book-yellow btn-sm">
+                    <i className="fas fa-book"></i>
+                </button>
+                <button type="button"
+                    className="btn-book-blue btn-sm ">
+                    <i className="fas fa-book-reader"></i>
+                </button>
+                <button type="button"
+                    className="btn-book-green btn-sm ">
+                    <i className="fas fa-check-square"></i>
                 </button>
 
                 <button type="button"
