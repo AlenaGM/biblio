@@ -1,6 +1,6 @@
 .list-group-item {
     padding: 15px 20px;
-    border-bottom: 1px solid #3d5a80;
+    border-bottom: 1px solid #005555;
 }
 
 .list-group-item:last-child {
@@ -31,11 +31,11 @@
 }
 
 .list-group-item .btn-cookie {
-    color: #e09f3e;
+    color: #FFC02D;
 }
 
 .list-group-item .btn-trash {
-    color: #e5383b;
+    color: #F54336;
 }
 
 .list-group-item .fa-star {
@@ -44,7 +44,7 @@
     text-align: center;
     line-height: 35px;
     font-size: 16px;
-    color: #FFD700;
+    color: #FFE16A;
     transition: 0.3s all;
     transform: translateX(30px);
     opacity: 0;
@@ -56,9 +56,9 @@
 }
 
 .list-group-item.increase .list-group-item-label, .list-group-item.increase .list-group-item-input {
-    color: #e09f3e;
+    color: #FFC02D;
 }
 
 .list-group-item.increase .btn-star {
-    color: #aeaeae;
+    color: #D8D8D8;
 }
