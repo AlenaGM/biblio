@@ -3,18 +3,18 @@ import './books-add-form.css';
 const BooksAddForm = () => {
     return (
         <div className="app-add-form">
-            <h3>Добавьте нового сотрудника</h3>
+            <h3>Add a new book</h3>
             <form
                 className="add-form d-flex">
                 <input type="text"
                     className="form-control new-post-label"
-                    placeholder="Как его зовут?" />
+                    placeholder="Title" />
                 <input type="number"
                     className="form-control new-post-label"
-                    placeholder="З/П в $?" />
+                    placeholder="Author" />
 
                 <button type="submit"
-                        className="btn btn-outline-light">Добавить</button>
+                        className="btn btn-outline-light">Add</button>
             </form>
         </div>
     )
