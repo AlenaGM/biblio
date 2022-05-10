@@ -11,7 +11,7 @@
     line-height: 35px;
     font-size: 20px;
     cursor: pointer;
-    width: 40%;
+    width: 60%;
 }
 
 .list-group-item input {
@@ -19,6 +19,7 @@
     font-size: 20px;
     text-align: left;
     border: 0;
+    width: 40%;
 }
 
 .list-group-item button {
@@ -31,7 +32,7 @@
 }
 
 .list-group-item .btn-book-yellow {
-    color: #FFC02D;
+    color: #F8B400;
 }
 
 .list-group-item .btn-book-green {
@@ -64,7 +65,7 @@
 }
 
 .list-group-item.increase .list-group-item-label, .list-group-item.increase .list-group-item-input {
-    color: #FFC02D;
+    color: #FFB069;
 }
 
 .list-group-item.increase .btn-star {
