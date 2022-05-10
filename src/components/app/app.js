@@ -1,12 +1,19 @@
 import AppInfo from '../app-info/app-info';
 import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
-import BooksList from '../books-list/books-list';
-import BooksAddForm from '../books-add-form/books-add-form';
+import BookList from '../book-list/book-list';
+import BookAddForm from '../book-add-form/book-add-form';
 
 import './app.css';
 
 function App() {
+
+  const data = [
+    {title:'Ulysses', author:'James Joyse'},
+    {title:'Something Deeply Hidden', author:'Sean Carroll'},
+    {title:'American Gods', author:'Neil Gaiman'}
+  ];
+
   return (
     <div className="app">
         <AppInfo />
@@ -16,8 +23,8 @@ function App() {
             <AppFilter/>
         </div>
 
-        <BooksList/>
-        <BooksAddForm/>
+        <BookList data={data}/>
+        <BookAddForm/>
     </div>
   );
 }

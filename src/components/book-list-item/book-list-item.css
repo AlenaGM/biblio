@@ -35,12 +35,12 @@
     color: #F8B400;
 }
 
-.list-group-item .btn-book-green {
-    color: #53C182;
-}
-
 .list-group-item .btn-book-blue {
     color: #4C90EB;
+}
+
+.list-group-item .btn-book-green {
+    color: #53C182;
 }
 
 .list-group-item .btn-trash {
@@ -64,8 +64,16 @@
     transform: translateX(0px);
 }
 
-.list-group-item.increase .list-group-item-label, .list-group-item.increase .list-group-item-input {
-    color: #FFB069;
+.list-group-item.want .list-group-item-label, .list-group-item.want .list-group-item-input {
+    color: #F8B400;
+}
+
+.list-group-item.reading .list-group-item-label, .list-group-item.reading .list-group-item-input {
+    color: #4C90EB;
+}
+
+.list-group-item.finished .list-group-item-label, .list-group-item.finished .list-group-item-input {
+    color: #53C182;
 }
 
 .list-group-item.increase .btn-star {

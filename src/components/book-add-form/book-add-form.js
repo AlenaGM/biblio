@@ -1,6 +1,6 @@
-import './books-add-form.css';
+import './book-add-form.css';
 
-const BooksAddForm = () => {
+const BookAddForm = () => {
     return (
         <div className="app-add-form">
             <h3>Add a new book</h3>
@@ -20,4 +20,4 @@ const BooksAddForm = () => {
     )
 }
 
-export default BooksAddForm;
+export default BookAddForm;

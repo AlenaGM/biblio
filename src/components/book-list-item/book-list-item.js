@@ -1,10 +1,10 @@
-import './books-list-item.css';
+import './book-list-item.css';
 
-const BooksListItem = () => {
+const BookListItem = ({title, author}) => {
     return (
         <li className="list-group-item d-flex justify-content-between">
-            <span className="list-group-item-label">John Smith</span>
-            <input type="text" className="list-group-item-input" defaultValue="1000$"/>
+            <span className="list-group-item-label">{title}</span>
+            <input type="text" className="list-group-item-input" defaultValue={author}/>
             <div className='d-flex justify-content-center align-items-center'>
                 <button type="button"
                     className="btn-book-yellow btn-sm">
@@ -29,4 +29,4 @@ const BooksListItem = () => {
     )
 }
 
-export default BooksListItem;
+export default BookListItem;
