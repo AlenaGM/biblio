@@ -20,7 +20,7 @@ const BooksListItem = () => {
                 </button>
 
                 <button type="button"
-                        className="btn-trash btn-sm ">
+                    className="btn-trash btn-sm ">
                     <i className="fas fa-trash"></i>
                 </button>
                 <i className="fas fa-star"></i>
