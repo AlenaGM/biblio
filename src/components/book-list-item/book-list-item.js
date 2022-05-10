@@ -1,8 +1,19 @@
 import './book-list-item.css';
 
-const BookListItem = ({title, author}) => {
+const BookListItem = ({title, author, want, reading, finished}) => {
+
+    let classNames = 'list-group-item d-flex justify-content-between';
+
+    if(want){
+        classNames += ' want';
+    } else if (reading) {
+        classNames += ' reading';
+    } else if (finished) {
+        classNames += ' finished';
+    }
+
     return (
-        <li className="list-group-item d-flex justify-content-between">
+        <li className={classNames}>
             <span className="list-group-item-label">{title}</span>
             <input type="text" className="list-group-item-input" defaultValue={author}/>
             <div className='d-flex justify-content-center align-items-center'>
