@@ -9,9 +9,9 @@ import './app.css';
 function App() {
 
   const data = [
-    {title:'Ulysses', author:'James Joyse', want: false, reading: true, finished: false},
-    {title:'Something Deeply Hidden', author:'Sean Carroll', want: true, reading: false, finished: false},
-    {title:'American Gods', author:'Neil Gaiman', want: false, reading: false, finished: true}
+    {isbn: 9780099511199, title:'Ulysses', author:'James Joyse', want: false, reading: true, finished: false},
+    {isbn: 9781786076335, title:'Something Deeply Hidden', author:'Sean Carroll', want: true, reading: false, finished: false},
+    {isbn: 9780747263746, title:'American Gods', author:'Neil Gaiman', want: false, reading: false, finished: true}
   ];
 
   return (
