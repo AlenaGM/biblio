@@ -5,8 +5,11 @@ import './book-list.css';
 const BookList = ({data}) => {
 
     const elements = data.map(item => {
+
+        const {isbn, ...itemProps} = item;
+
         return (
-        <BookListItem {...item}/>
+        <BookListItem key={isbn} {...itemProps}/>
         )
     })
 
