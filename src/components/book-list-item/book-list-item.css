@@ -47,16 +47,8 @@
     cursor: pointer;
 }
 
-.list-group-item .btn-book-yellow {
-    color: #F8B400;
-}
-
-.list-group-item .btn-book-blue {
-    color: #4C90EB;
-}
-
-.list-group-item .btn-book-green {
-    color: #53C182;
+.list-group-item .btn-book-yellow, .list-group-item .btn-book-blue, .list-group-item .btn-book-green {
+    color: #D8D8D8;
 }
 
 .list-group-item .btn-trash {
@@ -80,15 +72,15 @@
     transform: translateX(0px);
 }
 
-.list-group-item.want .list-group-item-label, .list-group-item.want .list-group-item-input {
+.list-group-item.want .list-group-item-label, .list-group-item.want .list-group-item-input, .list-group-item.want .btn-book-yellow {
     color: #F8B400;
 }
 
-.list-group-item.reading .list-group-item-label, .list-group-item.reading .list-group-item-input {
+.list-group-item.reading .list-group-item-label, .list-group-item.reading .list-group-item-input, .list-group-item.reading .btn-book-blue {
     color: #4C90EB;
 }
 
-.list-group-item.finished .list-group-item-label, .list-group-item.finished .list-group-item-input {
+.list-group-item.finished .list-group-item-label, .list-group-item.finished .list-group-item-input, .list-group-item.finished .btn-book-green {
     color: #53C182;
 }
 
