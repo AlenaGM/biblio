@@ -3,21 +3,21 @@ import "./app-filter.css";
 const AppFilter = (props) => {
 
         const buttonsData = [
-                {title: 'all', label: 'All Books'},
-                {title: 'want', label: 'Want to read'},
-                {title: 'reading', label: 'Still reading'},
-                {title: 'finished', label: 'Finished'}
+                {name: 'all', label: 'All Books'},
+                {name: 'want', label: 'Want to read'},
+                {name: 'reading', label: 'Still reading'},
+                {name: 'finished', label: 'Finished'}
         ]
 
-        const buttons = buttonsData.map(({title, label}) => {
-                const active = props.filter === title;
+        const buttons = buttonsData.map(({name, label}) => {
+                const active = props.filter === name;
                 const clazz = active ? 'btn-light' : 'btn-outline-light';
 
                 return (
                         <button type="button"
                                 className={`btn ${clazz}`}
-                                key={title}
-                                onClick={() => props.onFilterSelect(title)}>
+                                key={name}
+                                onClick={() => props.onFilterSelect(name)}>
                                 {label}
                         </button>
                 )
