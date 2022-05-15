@@ -23,8 +23,6 @@ class App extends Component {
 
   deleteItem = (isbn) => {
     this.setState(({data}) => {
-      const index = data.findIndex(elem => elem.isbn === isbn);
-
       return {
         data: data.filter(item => item.isbn !== isbn)
       }

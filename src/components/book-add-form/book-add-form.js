@@ -7,7 +7,8 @@ class BookAddForm extends Component {
         super(props);
         this.state = {
             title:'',
-            author:''
+            author:'',
+            isbn:''
         }
     }
 
@@ -19,7 +20,7 @@ class BookAddForm extends Component {
 
 
     render() {
-        const {title, author} = this.state;
+        const {title, author,isbn} = this.state;
 
         return (
             <div className="app-add-form">
@@ -37,6 +38,12 @@ class BookAddForm extends Component {
                         placeholder="Author"
                         name="author"
                         value={author}
+                        onChange={this.onValueChange}/>
+                    <input type="number"
+                        className="form-control new-post-label"
+                        placeholder="ISBN"
+                        name="isbn"
+                        value={isbn}
                         onChange={this.onValueChange}/>
 
                     <button type="submit"
