@@ -14,10 +14,12 @@ class App extends Component {
     super(props);
     this.state = {
       data: [
-          {isbn: 9780099511199, title:'Ulysses', author:'James Joyse', want: false, reading: false, finished: false},
-          {isbn: 9781786076335, title:'Something Deeply Hidden', author:'Sean Carroll', want: false, reading: false, finished: false},
-          {isbn: 9780747263746, title:'American Gods', author:'Neil Gaiman', want: false, reading: false, finished: false}
-        ]
+          {isbn: 9780099511199, title:'Ulysses', author:'James Joyse', want: false, reading: false, finished: false, like: false},
+          {isbn: 9781786076335, title:'Something Deeply Hidden', author:'Sean Carroll', want: false, reading: false, finished: false, like: false},
+          {isbn: 9780747263746, title:'American Gods', author:'Neil Gaiman', want: false, reading: false, finished: false, like: false}
+        ],
+        term:'',
+        filter:'all'
     }
   }
 
@@ -36,7 +38,8 @@ class App extends Component {
       author,
       want: false,
       reading: false,
-      finished: false
+      finished: false,
+      like: false
     }
     this.setState(({data}) => {
       const newArr = [...data, newItem];
@@ -55,25 +58,61 @@ class App extends Component {
             return item;
         })
     }))
-}
+  }
+
+  searchEmp = (items, term) => {
+    if (term.length=== 0) {
+      return items;
+    }
+
+    return items.filter(item => {
+      return item.title.indexOf(term) > -1
+    })
+  }
+
+  onUpdateSearch = (term) => {
+    this.setState({term});
+  }
+
+  filterPost = (items, filter) => {
+    switch (filter) {
+      case 'want':
+        return items.filter(item => item.want);
+      case 'reading':
+        return items.filter(item => item.reading);
+      case 'finished':
+        return items.filter(item => item.finished);
+      default:
+        return items
+    }
+  }
+
+  onFilterSelect = (filter) => {
+    this.setState({filter});
+  }
 
   render(){
+    const {data, term, filter} = this.state;
     const books = this.state.data.length;
     const wanted = this.state.data.filter(item => item.want).length;
     const isreading = this.state.data.filter(item => item.reading).length;
     const isfinished = this.state.data.filter(item => item.finished).length;
+    const visibleData = this.filterPost(this.searchEmp(data,term), filter);
 
     return (
       <div className="app">
           <AppInfo books={books} wanted={wanted} isreading={isreading} isfinished={isfinished}/>
 
           <div className="search-panel">
-              <SearchPanel/>
-              <AppFilter/>
+              <SearchPanel
+                onUpdateSearch={this.onUpdateSearch}/>
+              <AppFilter
+                filter={filter}
+                onFilterSelect={this.onFilterSelect}/>
           </div>
 
           <BookList
-            data={this.state.data}
+            data={visibleData}
             onDelete={this.deleteItem}
             onToggleProp={this.onToggleProp}/>
           <BookAddForm

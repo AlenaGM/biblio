@@ -38,7 +38,8 @@ class BookAddForm extends Component {
             <div className="app-add-form">
                 <h3>Add a new book</h3>
                 <form
-                    className="add-form d-flex">
+                    className="add-form d-flex"
+                    onSubmit={this.onSubmit}>
                     <input type="text"
                         className="form-control new-post-label"
                         placeholder="Title"

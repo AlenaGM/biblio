@@ -2,7 +2,7 @@ import './book-list-item.css';
 
 const BookListItem = (props) => {
 
-    const {isbn, title, author, onDelete, onToggleProp, want, reading, finished, like} = props;
+    const {title, author, onDelete, onToggleProp, want, reading, finished, like} = props;
 
     let classNames = 'list-group-item d-flex justify-content-between';
 
