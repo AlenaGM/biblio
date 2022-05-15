@@ -1,79 +1,42 @@
-import { Component } from 'react';
 import './book-list-item.css';
 
-class BookListItem extends Component {
+const BookListItem = (props) => {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            want: false,
-            reading: false,
-            finished: false,
-            like: false
-        }
+    const {isbn, title, author, onDelete, onToggleProp, want, reading, finished, like} = props;
+
+    let classNames = 'list-group-item d-flex justify-content-between';
+
+    if(want){
+        classNames += ' want';
     }
 
-    onWant = () => {
-        this.setState(({want}) => ({
-            want: !want
-        }))
+    if (reading) {
+        classNames += ' reading';
     }
 
-    onReading = () => {
-        this.setState(({reading}) => ({
-            reading: !reading
-        }))
+    if (finished) {
+        classNames += ' finished';
     }
 
-    onFinished = () => {
-        this.setState(({finished}) => ({
-            finished: !finished
-        }))
+    if (like) {
+        classNames += ' like';
     }
-
-    onLike = () => {
-        this.setState(({like}) => ({
-            like: !like
-        }))
-    }
-
-    render() {
-        const {title, author, onDelete} = this.props;
-        const {want, reading, finished, like} = this.state;
-
-        let classNames = 'list-group-item d-flex justify-content-between';
-
-        if(want){
-            classNames += ' want';
-        }
-
-        if (reading) {
-            classNames += ' reading';
-        }
-
-        if (finished) {
-            classNames += ' finished';
-        }
-
-        if (like) {
-            classNames += ' like';
-        }
 
         return (
             <li className={classNames}>
-                <span className="list-group-item-label" onClick={this.onLike}>{title}</span>
+                <span className="list-group-item-label" onClick={onToggleProp} data-toggle="like">{title}</span>
                 <input type="text" className="list-group-item-input" defaultValue={author}/>
                 <div className='d-flex justify-content-center align-items-center'>
                     <button type="button"
-                        className="btn-book-yellow btn-sm" onClick={this.onWant}>
+                        className="btn-book-yellow btn-sm" onClick={onToggleProp} data-toggle="want">
                         <i className="fas fa-book"></i>
                     </button>
                     <button type="button"
-                        className="btn-book-blue btn-sm" onClick={this.onReading}>
+                        className="btn-book-blue btn-sm" onClick={onToggleProp} data-toggle="reading">
                         <i className="fas fa-book-reader"></i>
                     </button>
                     <button type="button"
-                        className="btn-book-green btn-sm" onClick={this.onFinished}>
+                        className="btn-book-green btn-sm" onClick={onToggleProp} data-toggle="finished">
                         <i className="fas fa-check-square"></i>
                     </button>
 
@@ -86,6 +49,5 @@ class BookListItem extends Component {
             </li>
         )
     }
-}
 
 export default BookListItem;

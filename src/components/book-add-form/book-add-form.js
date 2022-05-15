@@ -1,4 +1,5 @@
 import { Component } from 'react';
+
 import './book-add-form.css';
 
 class BookAddForm extends Component {
@@ -6,9 +7,9 @@ class BookAddForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            isbn:'',
             title:'',
-            author:'',
-            isbn:''
+            author:''
         }
     }
 
@@ -18,9 +19,20 @@ class BookAddForm extends Component {
         })
     }
 
+    onSubmit = (e) => {
+        e.preventDefault();
+
+        if (this.state.title.length < 3 || this.state.author.length < 3 || !this.state.isbn) return;
+        this.props.onAdd(this.state.isbn, this.state.title, this.state.author);
+        this.setState({
+            isbn:'',
+            title: '',
+            author: ''
+        })
+    }
 
     render() {
-        const {title, author,isbn} = this.state;
+        const {isbn, title, author} = this.state;
 
         return (
             <div className="app-add-form">

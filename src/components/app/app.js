@@ -14,9 +14,9 @@ class App extends Component {
     super(props);
     this.state = {
       data: [
-          {isbn: 9780099511199, title:'Ulysses', author:'James Joyse', want: false, reading: true, finished: false},
-          {isbn: 9781786076335, title:'Something Deeply Hidden', author:'Sean Carroll', want: true, reading: false, finished: false},
-          {isbn: 9780747263746, title:'American Gods', author:'Neil Gaiman', want: false, reading: false, finished: true}
+          {isbn: 9780099511199, title:'Ulysses', author:'James Joyse', want: false, reading: false, finished: false},
+          {isbn: 9781786076335, title:'Something Deeply Hidden', author:'Sean Carroll', want: false, reading: false, finished: false},
+          {isbn: 9780747263746, title:'American Gods', author:'Neil Gaiman', want: false, reading: false, finished: false}
         ]
     }
   }
@@ -29,10 +29,43 @@ class App extends Component {
     })
   }
 
+  addItem = (isbn, title, author) => {
+    const newItem = {
+      isbn,
+      title,
+      author,
+      want: false,
+      reading: false,
+      finished: false
+    }
+    this.setState(({data}) => {
+      const newArr = [...data, newItem];
+      return {
+        data: newArr
+      }
+    });
+  }
+
+  onToggleProp = (isbn, prop) => {
+    this.setState(({data}) => ({
+        data: data.map(item => {
+            if (item.isbn === isbn) {
+                return {...item, [prop]: !item[prop]}
+            }
+            return item;
+        })
+    }))
+}
+
   render(){
+    const books = this.state.data.length;
+    const wanted = this.state.data.filter(item => item.want).length;
+    const isreading = this.state.data.filter(item => item.reading).length;
+    const isfinished = this.state.data.filter(item => item.finished).length;
+
     return (
       <div className="app">
-          <AppInfo />
+          <AppInfo books={books} wanted={wanted} isreading={isreading} isfinished={isfinished}/>
 
           <div className="search-panel">
               <SearchPanel/>
@@ -41,8 +74,10 @@ class App extends Component {
 
           <BookList
             data={this.state.data}
-            onDelete={this.deleteItem}/>
-          <BookAddForm/>
+            onDelete={this.deleteItem}
+            onToggleProp={this.onToggleProp}/>
+          <BookAddForm
+            onAdd={this.addItem}/>
       </div>
     );
   }

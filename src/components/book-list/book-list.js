@@ -2,7 +2,7 @@ import BookListItem from "../book-list-item/book-list-item";
 
 import './book-list.css';
 
-const BookList = ({data, onDelete}) => {
+const BookList = ({data, onDelete, onToggleProp}) => {
 
     const elements = data.map(item => {
 
@@ -12,7 +12,8 @@ const BookList = ({data, onDelete}) => {
         <BookListItem
             key={isbn}
             {...itemProps}
-            onDelete={()=> onDelete(isbn)}/>
+            onDelete={()=> onDelete(isbn)}
+            onToggleProp={(e) => onToggleProp(isbn, e.currentTarget.getAttribute('data-toggle'))}/>
         )
     })
 
