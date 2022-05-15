@@ -38,7 +38,7 @@ class BookListItem extends Component {
     }
 
     render() {
-        const {title, author} = this.props;
+        const {title, author, onDelete} = this.props;
         const {want, reading, finished, like} = this.state;
 
         let classNames = 'list-group-item d-flex justify-content-between';
@@ -78,7 +78,7 @@ class BookListItem extends Component {
                     </button>
 
                     <button type="button"
-                        className="btn-trash btn-sm ">
+                        className="btn-trash btn-sm" onClick={onDelete}>
                         <i className="fas fa-trash"></i>
                     </button>
                     <i className="fas fa-star"></i>

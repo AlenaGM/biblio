@@ -2,14 +2,17 @@ import BookListItem from "../book-list-item/book-list-item";
 
 import './book-list.css';
 
-const BookList = ({data}) => {
+const BookList = ({data, onDelete}) => {
 
     const elements = data.map(item => {
 
         const {isbn, ...itemProps} = item;
 
         return (
-        <BookListItem key={isbn} {...itemProps}/>
+        <BookListItem
+            key={isbn}
+            {...itemProps}
+            onDelete={()=> onDelete(isbn)}/>
         )
     })
 
