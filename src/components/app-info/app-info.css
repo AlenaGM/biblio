@@ -1,9 +1,8 @@
 
-
 .app-info {
     padding: 25px;
     background-color: #005555;
-    background: url("../../img/biblio.png") 50% top/cover no-repeat;
+    background: url("../../resources/img/biblio.png") 50% top/cover no-repeat;
     border-radius: 4px;
     box-shadow: 15px 15px 30px rgba(0,0,0, .15);
     color: #FAFAFA;

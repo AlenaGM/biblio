@@ -5,6 +5,7 @@ import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
 import BookList from '../book-list/book-list';
 import BookAddForm from '../book-add-form/book-add-form';
+import data from "../../resources/data/booklist.json";
 
 import './app.css';
 
@@ -13,13 +14,9 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      data: [
-          {isbn: 9780099511199, title:'Ulysses', author:'James Joyse', want: false, reading: false, finished: false, like: false},
-          {isbn: 9781786076335, title:'Something Deeply Hidden', author:'Sean Carroll', want: false, reading: false, finished: false, like: false},
-          {isbn: 9780747263746, title:'American Gods', author:'Neil Gaiman', want: false, reading: false, finished: false, like: false}
-        ],
-        term:'',
-        filter:'all'
+      data,
+      term:'',
+      filter:'all'
     }
   }
 

@@ -1,5 +1,4 @@
 import { Component } from 'react';
-
 import './book-add-form.css';
 
 class BookAddForm extends Component {

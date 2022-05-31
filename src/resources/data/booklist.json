@@ -1,0 +1,111 @@
+[{
+    "isbn": 9780099511199,
+    "title":"Ulysses",
+    "author":"James Joyse",
+    "language":"en",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9782290228258,
+    "title":"Mon enfant est hautement sensible",
+    "author":"Elaine Aron",
+    "language":"fr",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9785171108205,
+    "title":"Улисс",
+    "author":"Джеймс Джойс",
+    "language":"ru",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9781786076335,
+    "title":"Something Deeply Hidden",
+    "author":"Sean Carroll",
+    "language":"en",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9782221127131,
+    "title":"Un sentiment plus fort que la peur",
+    "author":"Merc Levy",
+    "language":"fr",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9781572245754,
+    "title":"Helping Your Anxious Child",
+    "author":"Ronald M. Rapee et al.",
+    "language":"en",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9785001178514,
+    "title":"Быть интровертом",
+    "author":"Дебби Танг",
+    "language":"ru",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9791022611183,
+    "title":"Les chiens de Pasvik",
+    "author":"Olivier Truc",
+    "language":"fr",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9780747263746,
+    "title":"American Gods",
+    "author":"Neil Gaiman",
+    "language":"en",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9785917597447,
+    "title":"Дар неудачи",
+    "author":"Джессика Лэйхи",
+    "language":"ru",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9785389163928,
+    "title":"Сверхчувствительная натура",
+    "author":"Элейн Эйрон",
+    "language":"ru",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+},{
+    "isbn": 9785170913824,
+    "title":"Метро 2033",
+    "author":"Дмитрий Глуховский",
+    "language":"ru",
+    "want": false,
+    "reading": false,
+    "finished": false,
+    "like": false
+}
+]
+

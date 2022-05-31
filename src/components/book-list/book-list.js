@@ -1,5 +1,4 @@
 import BookListItem from "../book-list-item/book-list-item";
-
 import './book-list.css';
 
 const BookList = ({data, onDelete, onToggleProp}) => {
