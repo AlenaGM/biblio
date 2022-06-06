@@ -63,7 +63,7 @@ class App extends Component {
     }
 
     return items.filter(item => {
-      return item.title.indexOf(term) > -1
+      return item.title.indexOf(term) > -1 || item.author.indexOf(term) > -1 || item.language.indexOf(term) > -1
     })
   }
 
