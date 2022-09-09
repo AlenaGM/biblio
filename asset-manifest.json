@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/%3Crepository-name%3E/static/css/main.1c0d2866.css",
+    "main.js": "/%3Crepository-name%3E/static/js/main.338e46c7.js",
+    "static/media/biblio.png": "/%3Crepository-name%3E/static/media/biblio.b674402b5619deb0a00f.png",
+    "index.html": "/%3Crepository-name%3E/index.html",
+    "main.1c0d2866.css.map": "/%3Crepository-name%3E/static/css/main.1c0d2866.css.map",
+    "main.338e46c7.js.map": "/%3Crepository-name%3E/static/js/main.338e46c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c0d2866.css",
+    "static/js/main.338e46c7.js"
+  ]
+}
