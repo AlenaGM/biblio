@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/la-petite-librairie/static/css/main.f2a10d89.css",
-    "main.js": "/la-petite-librairie/static/js/main.338e46c7.js",
+    "main.css": "/la-petite-librairie/static/css/main.9c164de7.css",
+    "main.js": "/la-petite-librairie/static/js/main.da08a2f5.js",
     "static/media/biblio.png": "/la-petite-librairie/static/media/biblio.b674402b5619deb0a00f.png",
     "index.html": "/la-petite-librairie/index.html",
-    "main.f2a10d89.css.map": "/la-petite-librairie/static/css/main.f2a10d89.css.map",
-    "main.338e46c7.js.map": "/la-petite-librairie/static/js/main.338e46c7.js.map"
+    "main.9c164de7.css.map": "/la-petite-librairie/static/css/main.9c164de7.css.map",
+    "main.da08a2f5.js.map": "/la-petite-librairie/static/js/main.da08a2f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2a10d89.css",
-    "static/js/main.338e46c7.js"
+    "static/css/main.9c164de7.css",
+    "static/js/main.da08a2f5.js"
   ]
 }
