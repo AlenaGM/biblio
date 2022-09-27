@@ -1,34 +1,30 @@
-# BIBLIO - Reading List Organizer
+# BIBLIO - Reading List Organizer :book:
 
-Wordy is a Single Page Application built with React that serves to learn English words with the help of flashcards.
+_CRUD Application built with React that serves to organize reading list._<br><br>
+Project to learn the basics of React.
 
-[Homepage] contains a list of all words with their translations and transcriptions.
-Data are fetched from an external server with the help of an API. Note, that all the words are grouped by collection. If you want, you can select only one single collection to be shown. You can both edit, delete and add words to the list (realised with React Context, but if you prefer MobX - just switch to mobx branch).
+## Features
 
-[Gamepage] represents a training mode: flashcards are shown one by one. You can have a look at translation by clicking "check" button. A counter shows the number of words learned during one session.
-<br><br>
-<img width="45%" alt="HomePage" src="../main/captureweb.jpeg">
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Book-search and book-filter options;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Possibility to edit, add and delete books in a list;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Reading-progress status;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Add-to-favourites option.<br>
 
-<br><br>
 ## Demo
 
 [Biblio]
 
-## Features
+## Result
 
-- Possibility to edit, add and delete words in a list;
-- All words or a single collection of words can be shown at a time;
-- A counter for words learned during one training session.
+<img width="45%" alt="HomePage" src="../main/captureweb.jpeg">
+
 
 ## Tech stack
 
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; React<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Functional Components<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Custom Hooks<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; SASS<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Fetch API, Get and Post requests<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; React Router<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; React Context<br>
+<code><img height="25" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
+<code><img height="25" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
 
 ## Installation
 
@@ -59,7 +55,7 @@ $ git checkout https://github.com/AlenaGM/biblio -b name_for_new_branch
 ##
 
   
-  \* _Weeks 26-34 Learning Project in [ITGirlSchool]_ 
+  \* _Project to practice basic React concepts_ 
   
 
    [Biblio]: <https://alenagm.github.io/biblio/)>
