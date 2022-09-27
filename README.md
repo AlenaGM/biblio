@@ -58,4 +58,4 @@ $ git checkout https://github.com/AlenaGM/biblio -b name_for_new_branch
   \* _Project to practice basic React concepts_ 
   
 
-   [Biblio]: <https://alenagm.github.io/biblio/)>
+   [Biblio]: <https://alenagm.github.io/biblio/>
