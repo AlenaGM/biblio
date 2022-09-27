@@ -1,21 +1,19 @@
-
 .app-info {
-    padding: 25px;
-    background-color: #005555;
-    background: url("../../resources/img/biblio.png") 50% top/cover no-repeat;
-    border-radius: 4px;
-    box-shadow: 15px 15px 30px rgba(0,0,0, .15);
-    color: #FAFAFA;
+  padding: 25px;
+  background-color: #005555;
+  background: url("../../resources/img/biblio.png") 50% top/cover no-repeat;
+  border-radius: 4px;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
+  color: #fafafa;
 }
 
 h1 {
-    color: #F8B400;
-    padding-bottom: 42px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 48px;
+  color: #f8b400;
+  padding-bottom: 24px;
+  font-family: "Dancing Script", cursive;
+  font-size: 56px;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
-
