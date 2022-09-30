@@ -55,8 +55,7 @@ $ git checkout https://github.com/AlenaGM/biblio -b name_for_new_branch
 ##
 
   
-\* _Week 32 Training Project in [ITGirlSchool]_ 
-  
+\* _Project to practice basic React concepts_ 
 
-   [ITGirlSchool]: <https://itgirlschool.com/en>
-   [chat-react]: <https://alenagm.github.io/chat-react/>
+
+   [Biblio]: <https://alenagm.github.io/biblio/>
