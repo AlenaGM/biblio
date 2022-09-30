@@ -12,7 +12,7 @@ Project to learn the basics of React.
 
 ## Demo
 
-[chat-react]
+[Biblio]
 
 ## Result
 
