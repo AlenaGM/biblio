@@ -12,7 +12,7 @@ Project to learn the basics of React.
 
 ## Demo
 
-[Biblio]
+[chat-react]
 
 ## Result
 
@@ -55,7 +55,8 @@ $ git checkout https://github.com/AlenaGM/biblio -b name_for_new_branch
 ##
 
   
-  \* _Project to practice basic React concepts_ 
+\* _Week 32 Training Project in [ITGirlSchool]_ 
   
 
-   [Biblio]: <https://alenagm.github.io/biblio/>
+   [ITGirlSchool]: <https://itgirlschool.com/en>
+   [chat-react]: <https://alenagm.github.io/chat-react/>
