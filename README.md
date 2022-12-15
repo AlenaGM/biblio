@@ -31,11 +31,14 @@ The following commands install and run the development version:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/AlenaGM/biblio.git)
+$ git clone https://github.com/AlenaGM/biblio.git
+
 # Go into the repository
-$ cd flashcards-app
+$ cd biblio
+
 # Install dependencies
 $ npm install
+
 # Run the app
 $ npm start
 ```
@@ -47,6 +50,7 @@ Contributions are always welcome! If you want to contribute:
 ```bash
 # Clone repo and create a new branch:
 $ git checkout https://github.com/AlenaGM/biblio -b name_for_new_branch
+
 #  Make changes
 #  Submit Pull Request with description of changes
 ```
