@@ -1,7 +1,7 @@
 # BIBLIO - Reading List Organizer :book:
 
 _CRUD Application built with React that serves to organize reading list._<br><br>
-Project to learn the basics of React. 
+Project made to learn the basics of React. 
 
 ## Features
 
