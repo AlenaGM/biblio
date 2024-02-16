@@ -1,7 +1,7 @@
 # BIBLIO - Reading List Organizer :book:
 
-_CRUD Application built with React that serves to organize reading list._<br><br>
-Project to learn the basics of React.
+_CRUD Application built with React for organizing reading list._<br><br>
+Project made to learn the basics of React. 
 
 ## Features
 
@@ -23,7 +23,6 @@ Project to learn the basics of React.
 
 <code><img height="25" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
 <code><img height="25" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
 
 ## Installation
@@ -32,11 +31,14 @@ The following commands install and run the development version:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/AlenaGM/biblio.git)
+$ git clone https://github.com/AlenaGM/biblio.git
+
 # Go into the repository
-$ cd flashcards-app
+$ cd biblio
+
 # Install dependencies
 $ npm install
+
 # Run the app
 $ npm start
 ```
@@ -48,6 +50,7 @@ Contributions are always welcome! If you want to contribute:
 ```bash
 # Clone repo and create a new branch:
 $ git checkout https://github.com/AlenaGM/biblio -b name_for_new_branch
+
 #  Make changes
 #  Submit Pull Request with description of changes
 ```
@@ -55,7 +58,7 @@ $ git checkout https://github.com/AlenaGM/biblio -b name_for_new_branch
 ##
 
   
-\* _Project to practice basic React concepts_ 
+\* _Project created in order to practice basic React concepts_ 
 
 
    [Biblio]: <https://alenagm.github.io/biblio/>
