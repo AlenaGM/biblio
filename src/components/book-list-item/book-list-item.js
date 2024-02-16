@@ -1,3 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBook,
+  faBookOpenReader,
+  faSquareCheck,
+  faTrash,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
+
 import "./book-list-item.css";
 
 const BookListItem = (props) => {
@@ -51,7 +60,7 @@ const BookListItem = (props) => {
           onClick={onToggleProp}
           data-toggle="want"
         >
-          <i className="fas fa-book"></i>
+          <FontAwesomeIcon icon={faBook} />
         </button>
         <button
           type="button"
@@ -60,7 +69,7 @@ const BookListItem = (props) => {
           onClick={onToggleProp}
           data-toggle="reading"
         >
-          <i className="fas fa-book-reader"></i>
+          <FontAwesomeIcon icon={faBookOpenReader} />
         </button>
         <button
           type="button"
@@ -69,7 +78,7 @@ const BookListItem = (props) => {
           onClick={onToggleProp}
           data-toggle="finished"
         >
-          <i className="fas fa-check-square"></i>
+          <FontAwesomeIcon icon={faSquareCheck} />
         </button>
 
         <button
@@ -78,9 +87,9 @@ const BookListItem = (props) => {
           className="btn-trash btn-sm"
           onClick={onDelete}
         >
-          <i className="fas fa-trash"></i>
+          <FontAwesomeIcon icon={faTrash} />
         </button>
-        <i className="fas fa-star"></i>
+        <FontAwesomeIcon icon={faStar} />
       </div>
     </li>
   );
