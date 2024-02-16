@@ -1,6 +1,7 @@
 .app-info {
   padding: 25px;
   background-color: #005555;
+  background: linear-gradient(65deg, #007474 0%, #17c1bc 80%, #79bcd7 100%);
   background: url("../../resources/img/biblio.png") 50% top/cover no-repeat;
   border-radius: 4px;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
