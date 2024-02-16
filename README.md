@@ -1,13 +1,13 @@
 # BIBLIO - Reading List Organizer :book:
 
-_CRUD Application built with React for organizing reading list._<br><br>
+_CRUD Application built with React for organizing reading lists._<br><br>
 Project made to learn the basics of React. 
 
 ## Features
 
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Book-search and book-filter options;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Possibility to edit, add and delete books in a list;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Reading-progress status;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Book search and filter options;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Ability to edit, add, and delete books in a list;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Reading progress status tracking;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Add-to-favourites option.<br>
 
 ## Demo
@@ -27,19 +27,19 @@ Project made to learn the basics of React.
 
 ## Installation
 
-The following commands install and run the development version:
+To run the application locally, follow these steps:
 
 ```bash
-# Clone this repository
+# Clone the repository
 $ git clone https://github.com/AlenaGM/biblio.git
 
-# Go into the repository
+# Navigate to the project directory
 $ cd biblio
 
-# Install dependencies
+# Install the dependencies
 $ npm install
 
-# Run the app
+# Start the app
 $ npm start
 ```
 
@@ -48,11 +48,11 @@ $ npm start
 Contributions are always welcome! If you want to contribute:
 
 ```bash
-# Clone repo and create a new branch:
+# Clone the repository and create a new branch for your contribution:
 $ git checkout https://github.com/AlenaGM/biblio -b name_for_new_branch
 
 #  Make changes
-#  Submit Pull Request with description of changes
+#  Submit a Pull Request with a description of your changes.
 ```
 
 ##
