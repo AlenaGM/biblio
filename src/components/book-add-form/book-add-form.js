@@ -70,7 +70,6 @@ class BookAddForm extends Component {
 
           <button
             type="submit"
-            id="add-btn"
             aria-label="submit new item"
             className="btn btn-outline-light"
           >

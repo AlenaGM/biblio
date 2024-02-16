@@ -15,7 +15,6 @@ const AppFilter = (props) => {
     return (
       <button
         type="button"
-        id="btn-filter"
         aria-label="filter button"
         className={`btn ${clazz}`}
         key={name}

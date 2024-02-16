@@ -46,7 +46,6 @@ const BookListItem = (props) => {
       <div className="d-flex justify-content-center align-items-center">
         <button
           type="button"
-          id="want-btn"
           aria-label="want-to-read button"
           className="btn-book-yellow btn-sm"
           onClick={onToggleProp}
@@ -56,7 +55,6 @@ const BookListItem = (props) => {
         </button>
         <button
           type="button"
-          id="reading-btn"
           aria-label="reading-now button"
           className="btn-book-blue btn-sm"
           onClick={onToggleProp}
@@ -66,7 +64,6 @@ const BookListItem = (props) => {
         </button>
         <button
           type="button"
-          id="finished-btn"
           aria-label="finished-to-read button"
           className="btn-book-green btn-sm"
           onClick={onToggleProp}
@@ -77,7 +74,6 @@ const BookListItem = (props) => {
 
         <button
           type="button"
-          id="del-btn"
           aria-label="delete-item button"
           className="btn-trash btn-sm"
           onClick={onDelete}
