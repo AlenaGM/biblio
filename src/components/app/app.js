@@ -65,8 +65,8 @@ class App extends Component {
 
     return items.filter((item) => {
       return (
-        item.title.toLowerCase().includes(term) ||
-        item.author.toLowerCase().includes(term)
+        item.title.toLowerCase().includes(term.toLowerCase()) ||
+        item.author.toLowerCase().includes(term.toLowerCase())
       );
     });
   };

@@ -24,6 +24,12 @@
   width: 60%;
 }
 
+@media screen and (max-width: 767px) {
+  .list-group-item span {
+    width: 100%;
+  }
+}
+
 .list-group-item input {
   line-height: 35px;
   font-size: 20px;
