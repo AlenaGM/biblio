@@ -1,4 +1,3 @@
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./app-filter.css";
 
 const AppFilter = (props) => {
