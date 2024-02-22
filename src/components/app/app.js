@@ -83,6 +83,8 @@ class App extends Component {
         return items.filter((item) => item.reading);
       case "finished":
         return items.filter((item) => item.finished);
+      case "like":
+        return items.filter((item) => item.like);
       default:
         return items;
     }

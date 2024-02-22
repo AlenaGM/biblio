@@ -80,7 +80,6 @@ const BookListItem = (props) => {
         >
           <FontAwesomeIcon icon={faSquareCheck} />
         </button>
-
         <button
           type="button"
           aria-label="delete-item button"
@@ -89,7 +88,15 @@ const BookListItem = (props) => {
         >
           <FontAwesomeIcon icon={faTrash} />
         </button>
-        <FontAwesomeIcon icon={faStar} />
+        <button
+          type="button"
+          aria-label="like-item button"
+          className="btn-sm"
+          onClick={onToggleProp}
+          data-toggle="like"
+        >
+          <FontAwesomeIcon icon={faStar} />
+        </button>
       </div>
     </li>
   );

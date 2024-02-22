@@ -1,3 +1,4 @@
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./app-filter.css";
 
 const AppFilter = (props) => {
@@ -6,6 +7,7 @@ const AppFilter = (props) => {
     { name: "want", label: "Want to read" },
     { name: "reading", label: "Reading now" },
     { name: "finished", label: "Finished" },
+    { name: "like", label: "Favourites" },
   ];
 
   const buttons = buttonsData.map(({ name, label }) => {
