@@ -51,6 +51,7 @@ const BookListItem = (props) => {
         className="list-group-item-input"
         defaultValue={author}
         aria-label="book author"
+        disabled
       />
       <div className="d-flex justify-content-center align-items-center">
         <button
